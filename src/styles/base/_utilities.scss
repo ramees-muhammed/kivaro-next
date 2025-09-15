@@ -9,6 +9,10 @@
   padding: 40px 130px;
 }
 
+.theme-bg-section {
+  background-color: var(--theme-bg);
+}
+
 /* Section gap (vertical spacing between sections inside a container) */
 .section-gap {
   display: flex;

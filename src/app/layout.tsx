@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { DM_Sans, Noto_Sans } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import { ThemeProvider } from "./context/ThemeProvider";
+
 
 
 
@@ -56,9 +57,11 @@ export default function RootLayout({
         className={`${dmSans.variable} ${notoSans.variable} antialiased`}
         suppressHydrationWarning
       >
-        <Header />
-        {children}
-        <Footer/>
+            <ThemeProvider>
+          <Header />
+          {children}
+          {/* <Footer/> */}
+        </ThemeProvider>
       </body>
     </html>
   );

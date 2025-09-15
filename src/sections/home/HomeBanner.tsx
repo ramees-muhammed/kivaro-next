@@ -1,13 +1,35 @@
-import React from 'react'
+import React from "react";
+import "./HomeBanner.css";
 
 const HomeBanner = () => {
   return (
-    <section>
-        <div className="banner-wrapper">
-            <img src="/images/home/home-banner.png" alt="" />
+    <section id="home" className="wrapper-section home-banner-section">
+      <div className="banner-container">
+        <div className="banner-image-wrapper">
+          <img src="/images/home/home-banner.png" alt="home-banner" />
         </div>
+
+        <div className="banner-contents-wrapper">
+          <div>
+            <h1>Code the Future. <br /> Lead the Change.</h1>
+            <p className="desktop-home-banner-content text-md-start">
+              Kivarolabs creates smart software solutions for businesses by
+              simplifying complex challenges, enabling your business to grow
+              faster.
+            </p>
+            <p className="mobile-home-banner-content d-md-none text-start">
+              We build smart, scalable software that helps your business grow
+              fast and stay ahead.
+            </p>
+          </div>
+
+          <div>
+            <h1>butttt</h1>
+          </div>
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default HomeBanner;

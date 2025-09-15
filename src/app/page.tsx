@@ -1,10 +1,16 @@
 import HomeBanner from "@/sections/home/HomeBanner";
+import HomeServices from "@/sections/home/HomeServices";
+import Sectors from "@/sections/home/Sectors";
+import WhyKivaro from "@/sections/home/WhyKivaro";
 
 export default async function Home() {
 
   return (
     <main className="home_page">
       <HomeBanner/>
+      <HomeServices/>
+      <WhyKivaro/>
+      <Sectors/>
     </main>
   );
 }

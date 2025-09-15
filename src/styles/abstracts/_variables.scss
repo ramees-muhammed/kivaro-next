@@ -1,22 +1,36 @@
 :root {
   --primary-color: #c51f2c;
   --body-bg-color: #000000;
-  --heading-color: #000000d9;
+  --heading-color: #ffffff;
   --content-color: #d9d9d9;
   --white: #ffffff;
   --nav-link-color: #cbcbcb;
   --footer-bg: "transparent";
+    --theme-bg:"transparent";
+    --box-bg-color:  #ffffff;
 
   --primary-font: var(--font-dm-sans);
   --secondary-font: var(--font-noto-sans);
 }
 
+:root.light-theme {
+  --body-bg-color: #ffffff;
+  --heading-color: #000000d9;
+  --content-color: #000000d9;
+  --nav-link-color: #000000D9;
+  --white: #000000d9;
+  --footer-bg: #eed9d8;
+  --theme-bg: #eed9d880;
+    --box-bg-color:#000000;
+
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: red;
+  // background-color: red;
 
-  // background-color: var(--body-bg-color);
+  background-color: var(--body-bg-color);
   font-family: var(--font-dm-sans), sans-serif;
 }
 
@@ -41,15 +55,15 @@ h1 {
 //custom dev
 h2 {
   font-weight: 700;
-  font-size: 18px;
+    font-size: clamp(18px, 4vw, 14px);
   line-height: 28px;
   letter-spacing: 0px;
-
+  color: var(--white);
   @media (max-width: 768px) {
     font-weight: 600;
-    font-size: 14px;
     line-height: 28px;
     letter-spacing: 0px;
+     color: var(--white);
   }
 }
 
@@ -87,7 +101,7 @@ p {
     color: var(--content-color);
     font-weight: 200;
     line-height: 22px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.5px;
     margin: 14px 0px;
   }
 }
