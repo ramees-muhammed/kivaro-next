@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-bootstrap";
 
 const Careers = () => {
   return (
@@ -23,7 +24,10 @@ const Careers = () => {
         </div>
 
         <div className="career_section_banner_left">
-          <img className="w-100" src="/images/career-banner.png" alt="" />
+          <Image
+            src={"/images/career-banner.png"}
+            alt="career-banner-img"
+          />
         </div>
       </section>
 
