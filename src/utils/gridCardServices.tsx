@@ -1,7 +1,10 @@
+
+import { ReactNode } from "react";
+
 export interface Service {
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon: ReactNode;
 }
 
 export const serviceData: Service[] = [

@@ -1,7 +1,7 @@
 
 "use client";
 import { useState, useEffect } from "react";
-import "./Home.css";
+import "./HomeServices.css";
 import { serviceData } from "@/utils/gridCardServices";
 
 const HomeServices = () => {

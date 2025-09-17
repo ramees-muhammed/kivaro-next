@@ -4,9 +4,7 @@ import { DM_Sans, Noto_Sans } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/layout/Header";
 import { ThemeProvider } from "./context/ThemeProvider";
-
-
-
+import Footer from "@/components/layout/Footer";
 
 // Google Fonts setup
 const dmSans = DM_Sans({
@@ -57,10 +55,10 @@ export default function RootLayout({
         className={`${dmSans.variable} ${notoSans.variable} antialiased`}
         suppressHydrationWarning
       >
-            <ThemeProvider>
+        <ThemeProvider>
           <Header />
           {children}
-          {/* <Footer/> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

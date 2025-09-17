@@ -1,3 +1,4 @@
+import Consultation from "@/sections/home/Consultation";
 import HomeBanner from "@/sections/home/HomeBanner";
 import HomeServices from "@/sections/home/HomeServices";
 import Sectors from "@/sections/home/Sectors";
@@ -11,6 +12,7 @@ export default async function Home() {
       <HomeServices/>
       <WhyKivaro/>
       <Sectors/>
+      <Consultation/>
     </main>
   );
 }
