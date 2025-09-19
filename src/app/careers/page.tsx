@@ -1,9 +1,12 @@
+import Blob from "@/components/ui/Blob";
+import Image from "next/image";
 import React from "react";
-import { Image } from "react-bootstrap";
+
 
 const Careers = () => {
   return (
     <>
+    <Blob/>
       <section className="wrapper-section career_section_banner">
         <div className="career_section_banner_right">
           <div>
@@ -25,8 +28,11 @@ const Careers = () => {
 
         <div className="career_section_banner_left">
           <Image
-            src={"/images/career-banner.png"}
+            src="/images/career-banner.svg"
             alt="career-banner-img"
+            width={489}
+            height={489}
+            priority
           />
         </div>
       </section>

@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "@/app/context/ThemeProvider";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/#services", label: "Services" },
-  { href: "/sectors", label: "Sectors we empower" },
+  { href: "/#sectors", label: "Sectors we empower" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
@@ -133,9 +133,8 @@ const Header = () => {
         </nav>
       </div>
 
-      <div className="mobile-theme-toggler-wrapper">
+      <div className="mobile-theme-toggler-wrapper d-lg-none">
         <Link
-          className="d-lg-none"
           id="theme-toggle"
           onClick={toggleTheme}
           href={"#"}

@@ -71,17 +71,15 @@ const Footer = () => {
         <div className="footer-links">
           <h6>Quick Links</h6>
           <ul>
-            <div>
-              <li className="nav-item">
-                <a>Home</a>
-              </li>
-              <li className="nav-item">
-                <a>About</a>
-              </li>
-              <li className="nav-item">
-                <a>Services</a>
-              </li>
-            </div>
+            <li className="nav-item">
+              <a>Home</a>
+            </li>
+            <li className="nav-item">
+              <a>About</a>
+            </li>
+            <li className="nav-item">
+              <a>Services</a>
+            </li>
 
             <div>
               <li className="nav-item">

@@ -1,15 +1,22 @@
 import Accordion, { AccordionItem } from "@/components/ui/Accordion";
+import Blob from "@/components/ui/Blob";
 import { coreValuesData } from "@/utils/coreValuesData";
+import Image from "next/image";
 import React from "react";
-import { Image } from "react-bootstrap";
-
 
 const About = () => {
   return (
     <>
+    <Blob/>
       <section className="about_banner_section wrapper-section">
         <div className="about_banner">
-          <img src="/images/banner-background.png" alt="about-banner" />
+          <Image
+            src="/images/banner-background.svg"
+            alt="about-banner"
+            width={796}
+            height={796}
+            priority
+          />
 
           <div className="about_banner_content">
             <h1>Who we are</h1>
@@ -158,13 +165,19 @@ const About = () => {
 
       {/* How we work section-------------------- */}
       <section className="wrapper-section theme-bg-section How-we-work-wrapper">
-        <div style={{display:"flex", flexDirection:"column"}}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <div>
             <h1 className="text-center">How we work</h1>
           </div>
 
           <div className="circle-container">
-           <Image src={"/images/about_circle_section.svg"} alt="circle-img"/>
+            <Image
+              src="/images/about-circle-section.svg"
+              alt="circle-img"
+              width={796}
+              height={796}
+              priority
+            />
           </div>
         </div>
       </section>

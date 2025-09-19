@@ -8,7 +8,7 @@ import { sectorsData } from "@/utils/sectorsData";
 
 const Sectors = () => {
   return (
-    <section className="solutions wrapper-section theme-bg-section">
+    <section id="sectors" className="solutions wrapper-section theme-bg-section">
       <div className="sectors_wrapper">
         {/* Desktop Header */}
         <div className="solution_header text-center d-none d-md-block">

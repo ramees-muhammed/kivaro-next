@@ -2,7 +2,7 @@
 import Accordion from "@/components/ui/Accordion";
 import "./HomeBanner.css";
 import { developmentData } from "@/utils/developmentData";
-
+import Image from "next/image";
 
 const WhyKivaro = () => {
   return (
@@ -29,9 +29,12 @@ const WhyKivaro = () => {
           </div>
 
           <div className="development-img-section">
-            <img
-              src="/images/home/development-img.png"
+            <Image
+              src="/images/home/development-bg.svg"
               alt="development-img"
+              width={644}
+              height={644}
+              priority
             />
           </div>
         </div>
@@ -49,5 +52,3 @@ const WhyKivaro = () => {
 };
 
 export default WhyKivaro;
-
-

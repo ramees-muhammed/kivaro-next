@@ -1,3 +1,4 @@
+import Blob from "@/components/ui/Blob";
 import Consultation from "@/sections/home/Consultation";
 import HomeBanner from "@/sections/home/HomeBanner";
 import HomeServices from "@/sections/home/HomeServices";
@@ -8,6 +9,7 @@ export default async function Home() {
 
   return (
     <main className="home_page">
+      <Blob/>
       <HomeBanner/>
       <HomeServices/>
       <WhyKivaro/>

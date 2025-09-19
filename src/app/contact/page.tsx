@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Blob from "@/components/ui/Blob";
 
 // ✅ Safe wrapper components to avoid hydration mismatch
 type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
@@ -57,7 +58,9 @@ const Contact = () => {
   });
 
   return (
+
     <section id="contactForm" className="contact-form-section wrapper-section">
+      <Blob/>
       {/* Banner part */}
       <div className="contact-banner-wrapper">
         <div>
@@ -133,7 +136,7 @@ const Contact = () => {
 
         <div className="contact-banner-img">
           <Image
-            src="/images/contact-banner.png"
+            src="/images/contact-banner.svg"
             alt="contact-banner"
             width={400}
             height={400}
