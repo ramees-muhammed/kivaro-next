@@ -1,6 +1,6 @@
 "use client";
 import Accordion from "@/components/ui/Accordion";
-import "./HomeBanner.css";
+import "./WhyKivaro.css";
 import { developmentData } from "@/utils/developmentData";
 import Image from "next/image";
 
@@ -19,7 +19,7 @@ const WhyKivaro = () => {
                   <div className="dot"></div>
                   <div>
                     <p style={{ color: "var(--white)" }}>
-                      <strong>{item.title}</strong>
+                      <b><strong>{item.title}</strong></b>
                     </p>
                     <p>{item.content}</p>
                   </div>

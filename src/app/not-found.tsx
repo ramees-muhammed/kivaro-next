@@ -1,9 +1,11 @@
+import Blob from "@/components/ui/Blob";
 import Image from "next/image";
 import React from "react";
 
 const NotFound = () => {
   return (
     <section className="error-page-container wrapper-section">
+      <Blob/>
       <div className="error-page-wrapper">
         <Image
           src="/images/404 Error-banner.svg"

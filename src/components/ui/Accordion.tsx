@@ -42,7 +42,7 @@ const Accordion = ({ items }: AccordionProps) => {
               >
                 <path
                   d="M2.33464 4.90958L6.17682 8.75182C6.39656 8.96842 6.69272 9.08984 7.0013 9.08984C7.30989 9.08984 7.60604 8.96842 7.82579 8.75182L11.668 4.90958"
-                  stroke="white"
+                  stroke="var(--heading-color)"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"

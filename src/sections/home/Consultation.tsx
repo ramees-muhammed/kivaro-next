@@ -1,6 +1,14 @@
+"use client";
+
+import Button from "@/components/ui/Button";
 import "./Consultation.css";
+import { useRouter } from "next/navigation";
 
 const Consultation = () => {
+  const router = useRouter();
+
+  const whatsappNumber = "917736277001";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi%20Kivaro%20Labs,%20I%20would%20like%20to%20discuss%20a%20project.`;
   return (
     <section className="consultation wrapper-section">
       <div className="consultation_wrapper">
@@ -17,16 +25,22 @@ const Consultation = () => {
         </div>
 
         <div className="banner-btns d-flex justify-content-center mt-5">
-          <button>Book a Free Consultation</button>
-          <button>Share Your Requirements</button>
+          <Button
+            variant="primary"
+            onClick={() => router.push("/contact")}
+            data-action="book"
+          >
+            Book a Free Consultation
+          </Button>
+          <Button onClick={()=> window.open(whatsappLink, "_blank")} data-action="requirements">Share Your Requirements</Button>
         </div>
       </div>
 
       <div className="consultation_wrapper_mobile d-md-none">
         <h1>Got an Idea?</h1>
-        <button className="banner-btn primary-btn">
-          <a className="banner-btn mobile-btn">Let’s Talk</a>
-        </button>
+        <Button variant="primary"  onClick={() => router.push("/contact")} data-action="talk" className="mobile-btn">
+          Let’s Talk
+        </Button>
       </div>
     </section>
   );

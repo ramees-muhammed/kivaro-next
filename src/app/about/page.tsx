@@ -172,7 +172,7 @@ const About = () => {
 
           <div className="circle-container">
             <Image
-              src="/images/about-circle-section.svg"
+              src="/images/about_circle_light_theme.svg"
               alt="circle-img"
               width={796}
               height={796}

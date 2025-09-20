@@ -9,6 +9,10 @@
   .solution_header {
     display: none;
   }
+
+  .theme-bg-section{
+    color: transparent;
+  }
 }
 
 .solution_header p {

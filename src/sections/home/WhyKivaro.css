@@ -1,0 +1,136 @@
+/* why kivaro ------------------------------------------------------------------------------*/
+.development-container {
+  display: flex;
+  justify-content: center;
+}
+
+.development-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  left: 5%;
+}
+
+.development-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.development-content-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.development-content-list .dot {
+  width: 20px;
+  height: 20px;
+  background: var(--white);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.development-img-section {
+  position: relative;
+  right: 5%;
+  height: 644px;
+  width: 644px;
+}
+
+@media (max-width: 1080px) {
+  .development-container {
+    flex-direction: column;
+    gap: 36px;
+    padding-top: 48px;
+  }
+
+  .development-content-container {
+    left: 0%;
+  }
+  .development-img-section {
+    right: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  .development-img-section img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1092px) {
+  .development-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    padding-top: 48px;
+  }
+  .development-content-container {
+    left: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .development-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .development-content-list {
+    justify-content: flex-start;
+    text-align: left;
+    width: calc(50% - 20px);
+  }
+
+  .development-img-section {
+    width: 70%; /* shrink */
+    height: auto; /* keep aspect ratio */
+    max-width: 500px;
+    margin: 0 auto; /* center horizontally */
+  }
+
+  .development-img-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .development-container {
+    display: none;
+  }
+  .development-container-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .development-content-list-mobile {
+    align-items: center;
+  }
+
+  .development-content-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .development-content-header .dot {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    background: var(--white);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .development-content-header p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--white);
+  }
+
+}
+/* why kivaro ------------------------------------------------------------------------------*/

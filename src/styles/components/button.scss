@@ -1,0 +1,43 @@
+.banner-btns {
+  display: flex;
+  gap: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 1080px) {
+  .banner-btns {
+    margin-top: 53px;
+    flex-direction: column;
+  }
+}
+
+.banner-btn {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: var(--white);
+  padding: 12px 20px;
+  text-wrap: nowrap;
+  background-color: transparent;
+  border: 2px solid var(--box-bg-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: var(--box-bg-color);
+  color: var(--body-bg-color);
+}
+
+.banner-btn.primary-btn {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.banner-btn.primary-btn:hover {
+  color: #000;
+}

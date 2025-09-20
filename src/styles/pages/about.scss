@@ -91,7 +91,7 @@
 @media (max-width: 768px) {
   .about_banner_section,
   .theme-bg-section {
-    display: none;
+    color: transparent;
   }
 
   .mission_vision_list {
@@ -215,9 +215,10 @@
   padding: 50px 0px;
 }
 
-/* default hide both, then show per theme */
-.circle-container img {
-  display: none;
+@media (max-width:768px) {
+  .circle-container img{
+    width: 100%;
+  }
 }
 
 // How-we-work section ------------------------------->

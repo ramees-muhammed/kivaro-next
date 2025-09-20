@@ -8,7 +8,7 @@ import WhyKivaro from "@/sections/home/WhyKivaro";
 export default async function Home() {
 
   return (
-    <main className="home_page">
+    <main className="home_page section-gap">
       <Blob/>
       <HomeBanner/>
       <HomeServices/>

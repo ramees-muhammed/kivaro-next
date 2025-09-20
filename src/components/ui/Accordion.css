@@ -46,25 +46,18 @@
 }
 
 .accordion-body p {
-  font-size: 15px;
-  font-family: var(--dm-sans);
-  font-weight: 300;
-  line-height: 22px;
-  letter-spacing: 0.2px;
-  color: var(--white);
+  text-align: justify;
+font-weight: 300;
+font-size: 11px;
+line-height: 16px;
+letter-spacing: 0.1px;
 }
 
 /* Arrow rotation */
 .arrow svg {
   transition: transform 0.3s ease;
+  
 }
 .arrow svg.open {
   transform: rotate(180deg);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .accordion-container {
-    padding: 0 10px;
-  }
 }
