@@ -38,7 +38,7 @@ const HomeServices = () => {
               onClick={() => toggleAccordion(index)}
             >
               <div className="icon_box">{service.icon}</div>
-             <p><b><strong>{service.title}</strong></b></p>
+             <p><strong>{service.title}</strong></p>
 
               {isMobile && (
                 <div

@@ -92,6 +92,7 @@
   .about_banner_section,
   .theme-bg-section {
     color: transparent;
+    display: none;
   }
 
   .mission_vision_list {
@@ -135,6 +136,10 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
+
+  h1{
+    padding-bottom: 50px;
+  }
 }
 .core_values_section {
   display: flex;
@@ -159,8 +164,9 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: justify;
+    white-space: pre-line; /* Converts \n to line breaks */
 }
 
 
@@ -205,7 +211,7 @@
 // core values section ------------------------------->
 
 // How-we-work section ------------------------------->
-.How-we-work-wrapper {
+.how-we-work-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,6 +219,16 @@
 
 .circle-container {
   padding: 50px 0px;
+
+  @media (max-width:768px) {
+    padding: 0;
+  }
+}
+
+.circle-container img {
+  width: 100%;
+  object-fit: contain;
+  height: fit-content;
 }
 
 @media (max-width:768px) {

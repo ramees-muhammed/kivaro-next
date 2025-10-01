@@ -12,22 +12,8 @@ footer {
     padding: 35px 10%;
     gap: 40px;
     align-items: start;
-  }
 
-  .logo svg {
-    width: 150px;
-    height: 32px;
-  }
-
-  .logo svg path {
-    fill: var(--white);
-  }
-
-  .logo svg .logo_symbol {
-    fill: #c51f2c;
-  }
-
-  .footer-links h6,
+    .footer-links h6,
   .footer-contact h6 {
     font-size: 14px;
     font-weight: 600;
@@ -43,6 +29,10 @@ footer {
     gap: 23px;
     padding: 0;
     margin: 0;
+
+    @media (max-width:768px) {
+      gap: 0px;
+    }
   }
 
   .footer-links ul li a {
@@ -55,11 +45,26 @@ footer {
     letter-spacing: 0px;
   }
 
-  .footer-links ul li a:hover {
+  .footer-links ul li a:hover{
     color: #c51f2c;
   }
 
+  }
 
+  .logo svg {
+    width: 150px;
+    height: 32px;
+  }
+
+  .logo svg path {
+    fill: var(--white);
+  }
+
+  .logo svg .logo_symbol {
+    fill: #c51f2c;
+  }
+
+  
   .footer-contact p {
     margin: 4px 0;
     color: var(--nav-link-color);

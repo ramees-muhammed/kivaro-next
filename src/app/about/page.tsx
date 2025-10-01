@@ -1,10 +1,14 @@
+"use client";
+
 import Accordion, { AccordionItem } from "@/components/ui/Accordion";
 import Blob from "@/components/ui/Blob";
 import { coreValuesData } from "@/utils/coreValuesData";
 import Image from "next/image";
 import React from "react";
+import { useTheme } from "../context/ThemeProvider";
 
 const About = () => {
+      const { theme } = useTheme();
   return (
     <>
     <Blob/>
@@ -136,7 +140,7 @@ const About = () => {
         <div className="core_values_list_wrapper">
           <h1 className="text-center">Our Core Values</h1>
           {coreValuesData.map((value, i) => (
-            <div key={i} className="core_values_content mt-5">
+            <div key={i} className="core_values_content">
               <div className="dot"></div>
               <div className="d-flex">
                 <p>
@@ -164,20 +168,31 @@ const About = () => {
       {/*  Core Values mobile------------------------------- */}
 
       {/* How we work section-------------------- */}
-      <section className="wrapper-section theme-bg-section How-we-work-wrapper">
+      <section className="wrapper-section theme-bg-section how-we-work-wrapper">
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div>
             <h1 className="text-center">How we work</h1>
           </div>
 
           <div className="circle-container">
-            <Image
+            {theme === "dark" ? (
+     <Image
+              src="/images/about-circle-section.svg"
+              alt="circle-img"
+              width={796}
+              height={796}
+              priority
+            />
+            ) : (
+                   <Image
               src="/images/about_circle_light_theme.svg"
               alt="circle-img"
               width={796}
               height={796}
               priority
             />
+            )}
+       
           </div>
         </div>
       </section>

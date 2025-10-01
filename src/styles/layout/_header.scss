@@ -231,16 +231,16 @@ header {
 
   /* Mobile Menu */
   .mobile-menu {
-    position: absolute;
-    top: 94px;
+    position: fixed;
+    top: 0;
     right: 0;
-    width: 100%;
     background-color: var(--body-bg-color);
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     z-index: 90;
+    
 
     ul {
       display: flex;
@@ -252,8 +252,10 @@ header {
     }
 
     .nav-link {
-      font-size: 18px;
-      font-weight: 500;
+              font-size: 14px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0px;
       color: var(--white);
 
       &.active {

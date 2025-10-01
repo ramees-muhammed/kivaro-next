@@ -1,8 +1,6 @@
 import Link from "next/link";
 
-
 const Footer = () => {
-
   const currentYear = new Date().getFullYear();
   return (
     <footer>
@@ -73,15 +71,17 @@ const Footer = () => {
         <div className="footer-links">
           <h6>Quick Links</h6>
           <ul>
-            <li className="nav-item">
-              <a>Home</a>
-            </li>
-            <li className="nav-item">
-              <a>About</a>
-            </li>
-            <li className="nav-item">
-              <a>Services</a>
-            </li>
+            <div>
+              <li className="nav-item">
+                <a>Home</a>
+              </li>
+              <li className="nav-item">
+                <a>About</a>
+              </li>
+              <li className="nav-item">
+                <a>Services</a>
+              </li>
+            </div>
 
             <div>
               <li className="nav-item">
@@ -218,9 +218,7 @@ const Footer = () => {
       </div>
 
       <div className="copyright-footer">
-        <p>
-          Copyright © {currentYear} | All Rights Reserved
-        </p>
+        <p>Copyright © {currentYear} | All Rights Reserved</p>
       </div>
     </footer>
   );
